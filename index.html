@@ -1,13 +1,309 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Résumé</title>
-    <link rel="stylesheet" href="base.css"> <!-- Used from https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css-->
-    
-  </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Résumé</title>
+        <link rel="stylesheet" href="base.css"> <!-- Used from https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css-->
+    </head>
+    <body>
+        <main>
+            <article>
+                <div class="page" style="border-color: midnightblue;">
+                    <div class="stackable grid">
+                        <div class="row">
+                            <div class="three wide center aligned column">
+                                <div class="avatar-wrapper">
+                                    <object class="avatar" data="./avatar.png" role="img" aria-label="My profile picture"></object>
+                                </div>
+                            </div>
+                            <div class="thirteen wide column">
+                                <div class="stackable grid">
+                                    <div class="sixteen wide column">
+                                        <h1 class="name">Ryu Hoshi (リュウ Ryū)</h1>
+                                        <div class="job">street fighter</div>
+                                        <ul class="contacts">
+                                            <li>
+                                                <a href="https://www.facebook.com/profile.php?id=100004808958030" rel="author" class="facebook">
+                                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                                                    <span>Ryu Hoshi(リュウ)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:ryuwins@gmail.com" rel="author" class="mail">
+                                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                                                    <span>ryuwins@gmail.com</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://twitter.com/denjinryu" rel="author" class="github">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                    </svg>
+                                                    <span>@DenjinRyu</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/sworn_ryu/" rel="author" class="skype">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon" viewBox="0 0 16 16">
+                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                                    </svg>
+                                                    <span>sworn_ryu</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sixteen wide mobile only column">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="sixteen wide column">
+                                        <h2>Résumé</h2>
+                                        <p>&mdash;&mdash; I do not compete with others, the only competition that challenges 
+                                            me is myself. As a fighter, friend and an employee I am known as 
+                                            contemplative, tortured and driven.</p>             
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="sixteen wide column">
+                                <div class="fat divider"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="ten wide column">
+                                <h3>Experience</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>2018</em></p>
+                                        <p>
+                                            Amongst many fighters of the past was featured in the movie "Ready Player 
+                                            One". Ryu ready always!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2017</em></p>
+                                        <p>
+                                            United with unknown until then to me Power Rangers to defea resurrected 
+                                            M.Bison.Damn good fighters they are, even not knowing karate ways!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2016</em></p>
+                                        <p>
+                                            In "Street Fighter V" once and for all erased M.Bison from earth and tamed 
+                                            my inner Evil Ryu. Also spent some time on a side-project, mini-series 
+                                            "Street Fighter: Resurrection".
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2014</em></p>
+                                        <p>
+                                            Filmed in a martial arts tutorial "Street Fighter: Assassin's Fist", 
+                                            revealing to audience forgotten art of Ansatsuken.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2012</em></p>
+                                        <p>
+                                            The gods of intenet concluded me in the animated movie "Wreck-It Ralph", 
+                                            but rewarded me with a good drink for it!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2008</em></p>
+                                        <p>
+                                            My evil alter ego sneaked out of control and became a boss in 
+                                            "Street Fighter IV".
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2006</em></p>
+                                        <p>
+                                            Borrowed my famous ripped gi to Soki in "Onimusha: Dawn of Dreams", 
+                                            gods informed me he needed that for the battle.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1998</em></p>
+                                        <p>
+                                            Defeated M. Bison in "Street Fighter Alpha 2", 
+                                            bastard wanted to use my heroic body for his evil intentions, 
+                                            but retreated with shame. Also this year I encountered Marvel 
+                                            universe in "Marvel vs. Capcom: Clash of Super Heroes" fighter,
+                                            loyal to my employer, Capcom, of course.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1997</em></p>
+                                        <p>
+                                            Reunited with Ken, my friend and opponent in 
+                                            "Street Fighter III". Men's friendship works mysteriously. 
+                                            Also helped with Arika project "Street Fighter EX"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1996</em></p>
+                                        <p>
+                                            Took care of villainous Akuma in "Street Fighter Alpha 2". 
+                                            As a freelance on "Super Puzzle Fighter II Turbo" tried myself in a
+                                             new genre, puzzle games. Let the wrath of seven heavens come upon 
+                                             these malicious enigmas, never again!
+
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1995</em></p>
+                                        <p>
+                                            Kept fighting in "Street Fighter Alpha: Warriors' Dreams".
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1994</em></p>
+                                        <p>
+                                            Screened in a movie "Street Fighter", so that the batllesof past would 
+                                            not be forgotten by millenial generation.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1991</em></p>
+                                        <p>
+                                            Was promoted to "Street Fighter II". Didn't stay there for long, 
+                                            celebrations and office dwelling is not for me!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1987</em></p>
+                                        <p>
+                                            Started working for Capcom project "Street Fighter". 
+                                            My partner was Ken Masters, the boss'name was Sagat.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <h3>PUBLICATIONS</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>2011</em></p>
+                                        <p>
+                                            The true and humble story of me under pseudonim Tyler 
+                                            Wilde in an article "The evolution of Ken and Ryu"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2003-2018 </em></p>
+                                        <p>
+                                            For 15 years I have published comic books with Udon Entertainment 
+                                            depicting my adventures, bitter lessons and great victories.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="six wide column">
+                                <section>
+                                    <h3>LIFE &amp; EDUCATION</h3>
+                                    <p class="small">
+                                        To live is to fight and to fight is to live.
+                                    </p>
+                                    <p class="small">
+                                        I started learning fighting at my master Gouken's castle, 
+                                        I was beaten at head way too often to remember when exactly.
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Languages</h3>
+                                    <p class="tags small">
+                                        <span class="language" lang="us">
+                                            &#x1f1fa;&#x1f1f8; ENGLISH
+                                        </span> 
+                                        <span class="language" lang="cn">
+                                            &#127464;&#127475; <span>MANDARIN</span>
+                                        </span> 
+                                        <span class="language" lang="en">
+                                            &#127471;&#127477; <span>JAPANESE</span>
+                                        </span>
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>SKILLS</h3>
+                                    <p class="tags small">
+                                        KARATE ENERGY ATTACK SHORYUKEN WALKING BAREFOOT PLAYING VIDEOGAMES DOING BURGERS
+                                         MASHING POTATOES COPYWRITING ACTING VOICEOVERS
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Character</h3>
+                                    <p class="tags small">
+                                        NOBLE DIRECT BOLD CONFIDENT DARING SCHIZOPHRENIC DRAMATIC PERSUASIVE IMMEDIATE 
+                                        WISE
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>LIFE LESSON</h3>
+                                    <p class="small">
+                                        You must defeat Sheng Long to stand a chance.
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Likes&#x1f603;</h3>
+                                    <p class="tags small">
+                                        GI VEGETABLES BLOOD SMALL MARSHMELLOWS RED COLOR KILLED ENEMY
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Dislikes&#x1f61e;</h3>
+                                    <p class="tags small">
+                                        BISONS GHOSTS SMARTPHONES <span class="nowrap">SMELL OF SEAFOOD</span>
+                                         <span class="nowrap">BARBER SHOPS</span> SLEEVES
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Wants&#x1f97a;</h3>
+                                    <p class="tags small bulleted">BE FIT WRITE MORE BOOKS FIND A GIRLFRIEND TO GO TO 
+                                        CINEMA WITH KILL ALL OF AKUMA FAMILY
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>ACHIEVEMENTS</h3>
+                                    <ul class="timeline">
+                                        <li>
+                                            <div>
+                                                #1 in "Top 25 Street Fighter Characters" by IGN, who also called me 
+                                                "fancy", "icon" and "a testament to the virtue of simplicity" 
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                #2 in "Top 20 Street Fighter Characters of All Time" by GameDaily, same
+                                                council found me worth of #6 place in "Top 25 Capcom Characters of
+                                                All Time", which I proudly share with my partner Ken
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                I was named "5th Most Powerful Street Fighter Character" by Screen 
+                                                Rant-san
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                #71 in "Top 100 Heroes of All Time" by UGO Networks, also recognized 
+                                                #2 in their list of "Top 50 Street Fighter Characters"
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                In a survey of 4000 online matches for Super Street Fighter IV, 
+                                                I got to be the most popular character, with 16.6% of players choosing 
+                                                my side
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </article>
+        </main>
+    </body>
 </html>
